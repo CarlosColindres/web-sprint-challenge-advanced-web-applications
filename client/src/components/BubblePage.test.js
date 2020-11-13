@@ -1,7 +1,10 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import BubblePage from "./BubblePage";
 
 test("Fetches data and renders the bubbles", () => {
   // Finish this test
+  const { getByText } = render(<BubblePage />);
+  getByText("bubbles");
+
 });
